@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom base styles */
+@layer base {
+  /* You can add custom base styles here */
+}
+
+@layer components {
+  /* Custom component styles */
+  .btn-primary {
+    @apply bg-primary-500 rounded-lg px-4 py-2 font-medium text-white;
+  }
+
+  .card {
+    @apply mb-4 rounded-xl bg-white p-4 shadow-lg;
+  }
+}
+
+@layer utilities {
+  /* Custom utility classes */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
